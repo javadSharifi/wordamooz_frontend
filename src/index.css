@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  width: 12px;
+  border-radius: 10%;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background: #91cdff;
+}
+::-webkit-scrollbar-thumb:hover {
+  width: 10px;
+  background: linear-gradient(transparent, #66b0ec);
+}
+
+@layer components {
+  .bg-gray {
+    background-color: rgb(229, 232, 240);
+  }
+  .center {
+    @apply flex flex-wrap items-center justify-center;
+  }
+  .input {
+    @apply rounded-xl border-b-2 border-slate-600/20 bg-white/80 p-3 opacity-70  shadow-md shadow-slate-300/50 outline-none transition-all duration-100 hover:border-sky-300/60 hover:opacity-100 hover:shadow-slate-300/70  focus:border-sky-300/60  md:w-64;
+  }
+  .input-text {
+    @apply text-black   lg:h-[53px];
+  }
+
+  .shadow-card-dark:hover {
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+      rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+      rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+      rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+      rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+      rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  }
+  .shadow-card-dark {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+  }
+
+  .shadow-btn:hover {
+    box-shadow: rgb(121 217 235 / 66%) 0px 5px 15px 0px;
+  }
+  .shadow-btn {
+    box-shadow: rgb(121 217 235 / 66%) 0px 0px 0px 0px;
+  }
+  .card-btn {
+    @apply center h-9 w-9 rounded-md  bg-slate-50/90  shadow-md hover:text-cyan-300 dark:bg-[#272727db] dark:shadow-slate-900 sm:h-8 sm:w-8 md:h-10 md:w-10;
+  }
+  .onClick {
+    @apply cursor-pointer transition-all duration-150;
+  }
+
+  .onClick:hover {
+    box-shadow: 0px 15px 25px -5px rgba(darken(dodgerblue, 40%));
+    transform: scale(1.03);
+  }
+  .bg-gradient-info {
+    @apply bg-gradient-to-r from-blue-400/80 to-cyan-300/80;
+  }
+
+  .BtnNavigation {
+    @apply onClick w-10  rounded-lg p-1 hover:border-2  dark:hover:border-cyan-300 dark:hover:text-cyan-300;
+  }
+
+  .onClick:active {
+    box-shadow: 0px 4px 8px rgba(darken(dodgerblue, 30%));
+    transform: scale(0.98);
+  }
+  .card {
+    @apply relative w-full flex-col gap-2 overflow-hidden rounded-3xl border-gray-600/40 bg-white shadow-md shadow-slate-200 transition-all 
+       duration-150 hover:shadow-lg hover:shadow-blue-200/50 dark:border-2 dark:bg-[#202124]
+        dark:shadow-none dark:hover:border-cyan-500/30;
+  }
+  .postcard‌‌-Button {
+    @apply right-5  z-50  flex gap-4
+     opacity-0  transition-all duration-500 group-hover:opacity-80 sm:-translate-x-3 md:top-2/4 md:translate-y-3 
+      md:group-hover:opacity-100;
+  }
+}
