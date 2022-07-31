@@ -20,7 +20,7 @@ function Nav() {
       <div className="mx-3 my-[0.4rem] flex w-2/3 flex-row-reverse flex-wrap items-center  gap-4 ">
         <Avatar />
         <OpenModal
-          className=" bg-gradient-info center  h-full  gap-1 rounded-xl border-gray-600 px-5 shadow-md hover:border-none hover:text-white  dark:border-2 dark:bg-transparent dark:text-gray-300 "
+          className=" bg-gradient-info center hidden  lg:flex  h-full  gap-1 rounded-xl border-gray-600 px-5 shadow-md hover:border-none hover:text-white  dark:border-2 dark:bg-transparent dark:text-gray-300 "
           name={title}
         >
           <PlusCircleIcon className="h-full w-6 " />

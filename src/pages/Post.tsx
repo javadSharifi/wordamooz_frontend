@@ -6,18 +6,15 @@ import ModalCreate from 'components/ModalCreate';
 import CreatePost from 'components/post/Create';
 import CardPost from 'components/post/card';
 import useInfiniteScroll from 'hooks/useInfiniteScroll';
-
+import CartLoading from 'components/CartLoading';
 
 function Post() {
-  const { data, isLoading, hasNextPage, fetchNextPage, isFetchingNextPage } =
-    usePrivatePots();
-
+  const { data, isLoading, hasNextPage, fetchNextPage, isFetchingNextPage } =usePrivatePots();
   useInfiniteScroll(hasNextPage, fetchNextPage);
   const { idCategory: id } = useParams();
-
+  
   const result = isLoading ? (
-    
-    <p> loading... </p>
+    <CartLoading />
   ) : (
     data?.pages.map((page, i) => (
       <Fragment key={i}>
@@ -43,7 +40,7 @@ function Post() {
         </ModalCreate>
       </Modal>
       {result}
-      {isFetchingNextPage && <div>Loading...</div>}
+      {isFetchingNextPage && <CartLoading />}
     </>
   );
 }

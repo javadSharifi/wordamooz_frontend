@@ -8,7 +8,7 @@ function Search({ className }: { className?: string }) {
 
   return (
     <div
-      className={`${className}  md:center hidden rounded-2xl border-gray-500  dark:border-2 dark:bg-transparent `}
+      className={`${className}  center  rounded-2xl border-gray-500  dark:border-2 dark:bg-transparent `}
     >
       <SearchIcon className="onClick h-full w-7  cursor-pointer object-cover py-1 text-gray-400 dark:text-white" />
       <input

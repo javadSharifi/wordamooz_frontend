@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 import useGoogle from 'services/auth/google';
-import IGoogle from 'assets/svg/google.svg'
+import IGoogle from 'assets/svg/google.svg';
 
 function BtnGoogle() {
   return (

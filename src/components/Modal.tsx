@@ -6,7 +6,7 @@ export function OpenModal({
   children,
 }: {
   name: string;
-  className: string;
+  className?: string;
   children: any;
 }) {
   return (
@@ -24,7 +24,13 @@ function Modal({ children, name }: { children: any; name: string }) {
     <>
       <input type="checkbox" id={name} className="modal-toggle" />
       <label className="modal bg-slate-400/30" htmlFor={name}>
+            <label
+      htmlFor=""
+      className="flex min-h-[25rem] w-[25rem] flex-col items-center gap-3 rounded-2xl bg-slate-50 p-3 dark:bg-[#1E293B] lg:w-[30rem]"
+        >
+          
         {children}
+    </label>
       </label>
     </>
   );

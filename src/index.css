@@ -81,4 +81,8 @@
      opacity-0  transition-all duration-500 group-hover:opacity-80 sm:-translate-x-3 md:top-2/4 md:translate-y-3 
       md:group-hover:opacity-100;
   }
+  .buttonSidebar
+  {
+    @apply onClick hover:bg-gradient-info text-gray-500 font-semibold  hover:text-white   flex w-10/12 cursor-pointer select-none flex-wrap gap-2  rounded-lg py-3  text-lg  text-gray-500   transition-all duration-200 hover:pl-2  hover:font-bold hover:shadow-md dark:text-white    
+  }
 }

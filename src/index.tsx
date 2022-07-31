@@ -13,7 +13,6 @@ import { BrowserRouter } from 'react-router-dom';
 import App from 'App';
 import SearchContext from 'context/SearchContext';
 
-
 const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
@@ -31,18 +30,17 @@ Aos.init();
 root.render(
   <React.StrictMode>
     <QueryClientProvider client={queryClient}>
-    
-        <AuthContext>
-          <SearchContext>
-            <BrowserRouter>
-              <Starter>
-                <App />
-              </Starter>
-            </BrowserRouter>
-          </SearchContext>
-        </AuthContext>
-        <Toaster />
-    
+      <AuthContext>
+        <SearchContext>
+          <BrowserRouter>
+            <Starter>
+              <App />
+            </Starter>
+          </BrowserRouter>
+        </SearchContext>
+      </AuthContext>
+      <Toaster />
+
       <ReactQueryDevtools initialIsOpen={false} />
     </QueryClientProvider>
   </React.StrictMode>

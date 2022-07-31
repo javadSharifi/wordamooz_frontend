@@ -5,7 +5,7 @@ import Create from 'components/category/Create';
 import CardCategory from 'components/category/Card';
 import useInfiniteScroll from 'hooks/useInfiniteScroll';
 import { Fragment } from 'react';
-
+import CartLoading from 'components/CartLoading';
 
 function Category() {
   const { data, isLoading, hasNextPage, fetchNextPage, isFetchingNextPage } =
@@ -13,7 +13,7 @@ function Category() {
   useInfiniteScroll(hasNextPage, fetchNextPage);
 
   const result = isLoading ? (
-    <p> loading... </p>
+    <CartLoading />
   ) : (
     data?.pages.map((page, i) => (
       <Fragment key={i}>
@@ -33,7 +33,7 @@ function Category() {
       </Modal>
 
       {result}
-      {isFetchingNextPage && <div>Loading...</div>}
+      {isFetchingNextPage && <CartLoading />}
     </>
   );
 }

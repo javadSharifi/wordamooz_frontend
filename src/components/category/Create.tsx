@@ -25,7 +25,6 @@ function Create() {
           { name: category, is_public: false },
           {
             onSuccess(res) {
-            
               toast.success('create is success');
               actions.resetForm();
               closModal.current.click();
@@ -34,7 +33,7 @@ function Create() {
               ]);
             },
             onError(e: any) {
-             toast.error(`${actions.setErrors(e.response.data.errors)}`);
+              toast.error(`${actions.setErrors(e.response.data.errors)}`);
             },
           }
         );

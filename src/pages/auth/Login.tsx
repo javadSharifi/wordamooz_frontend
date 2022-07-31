@@ -3,7 +3,7 @@ import { Formik } from 'formik';
 import React, { useContext } from 'react';
 import toast from 'react-hot-toast';
 import * as Yup from 'yup';
-import {  Form } from '../../components/auth/form';
+import { Form } from '../../components/auth/form';
 import Title from 'components/auth/Title';
 import useLogin from 'services/auth/login';
 import { authContext } from 'context/AuthContext';

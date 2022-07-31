@@ -1,110 +1,23 @@
 import React from 'react';
 
 function CartLoading() {
+  const cart = [];
 
-
-
-
-
-  return (
-
-
-<>
-    <div className="card">
-      <div
-        // data-aos="zoom-in-up"
-        className="  animate-pulse  group  center   relative h-fit  "
-      >
-        <div className="  aspect-square  h-52 mt-2 w-[95%] select-none rounded-3xl  object-cover  object-center   bg-slate-400/30   " />
-
-        <div className=" pr-1 py-2 font-bold  ">
-          <div className="h-9 w-52 bg-slate-400/30 rounded-xl  "></div>
-          <div className="h-9 w-64 bg-slate-400/30 rounded-xl  mt-2 "></div>
+  for (let i = 0; i < 6; i++) {
+    cart.push(
+      <div className="card">
+        <div className="  center  group  relative   h-fit animate-pulse  ">
+          <div className="  mt-2  aspect-square h-52 w-[95%] select-none rounded-3xl  bg-slate-400/30  object-cover   object-center   " />
+          <div className=" py-2 pr-1 font-bold  ">
+            <div className="h-9 w-52 rounded-xl bg-slate-400/30  "></div>
+            <div className="mt-2 h-9 w-64 rounded-xl  bg-slate-400/30 "></div>
+          </div>
         </div>
       </div>
-    </div>
+    );
+  }
 
-        <div className="card">
-      <div
-        // data-aos="zoom-in-up"
-        className="  animate-pulse  group  center   relative h-fit  "
-      >
-        <div className="  aspect-square  h-52 mt-2 w-[95%] select-none rounded-3xl  object-cover  object-center   bg-slate-400/30   " />
-
-        <div className=" pr-1 py-2 font-bold  ">
-          <div className="h-9 w-52 bg-slate-400/30 rounded-xl  "></div>
-          <div className="h-9 w-64 bg-slate-400/30 rounded-xl  mt-2 "></div>
-        </div>
-      </div>
-    </div>
-        <div className="card">
-      <div
-        // data-aos="zoom-in-up"
-        className="  animate-pulse  group  center   relative h-fit  "
-      >
-        <div className="  aspect-square  h-52 mt-2 w-[95%] select-none rounded-3xl  object-cover  object-center   bg-slate-400/30   " />
-
-        <div className=" pr-1 py-2 font-bold  ">
-          <div className="h-9 w-52 bg-slate-400/30 rounded-xl  "></div>
-          <div className="h-9 w-64 bg-slate-400/30 rounded-xl  mt-2 "></div>
-        </div>
-      </div>
-    </div>
-        <div className="card">
-      <div
-        // data-aos="zoom-in-up"
-        className="  animate-pulse  group  center   relative h-fit  "
-      >
-        <div className="  aspect-square  h-52 mt-2 w-[95%] select-none rounded-3xl  object-cover  object-center   bg-slate-400/30   " />
-
-        <div className=" pr-1 py-2 font-bold  ">
-          <div className="h-9 w-52 bg-slate-400/30 rounded-xl  "></div>
-          <div className="h-9 w-64 bg-slate-400/30 rounded-xl  mt-2 "></div>
-        </div>
-      </div>
-    </div>
-        <div className="card">
-      <div
-        // data-aos="zoom-in-up"
-        className="  animate-pulse  group  center   relative h-fit  "
-      >
-        <div className="  aspect-square  h-52 mt-2 w-[95%] select-none rounded-3xl  object-cover  object-center   bg-slate-400/30   " />
-
-        <div className=" pr-1 py-2 font-bold  ">
-          <div className="h-9 w-52 bg-slate-400/30 rounded-xl  "></div>
-          <div className="h-9 w-64 bg-slate-400/30 rounded-xl  mt-2 "></div>
-        </div>
-      </div>
-    </div>
-        <div className="card">
-      <div
-        // data-aos="zoom-in-up"
-        className="  animate-pulse  group  center   relative h-fit  "
-      >
-        <div className="  aspect-square  h-52 mt-2 w-[95%] select-none rounded-3xl  object-cover  object-center   bg-slate-400/30   " />
-
-        <div className=" pr-1 py-2 font-bold  ">
-          <div className="h-9 w-52 bg-slate-400/30 rounded-xl  "></div>
-          <div className="h-9 w-64 bg-slate-400/30 rounded-xl  mt-2 "></div>
-        </div>
-      </div>
-    </div>
-        <div className="card">
-      <div
-        // data-aos="zoom-in-up"
-        className="  animate-pulse  group  center   relative h-fit  "
-      >
-        <div className="  aspect-square  h-52 mt-2 w-[95%] select-none rounded-3xl  object-cover  object-center   bg-slate-400/30   " />
-
-        <div className=" pr-1 py-2 font-bold  ">
-          <div className="h-9 w-52 bg-slate-400/30 rounded-xl  "></div>
-          <div className="h-9 w-64 bg-slate-400/30 rounded-xl  mt-2 "></div>
-        </div>
-      </div>
-    </div>
-
-</>
-  );
+  return <>{cart}</>;
 }
 
 export default CartLoading;

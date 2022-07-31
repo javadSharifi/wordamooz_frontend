@@ -15,19 +15,19 @@ function App() {
   const routes = useRoutes([
     {
       path: '/auth',
-      element: auth.loading ? <Navigate to="/" /> : <Auth />,
+      element: auth.id ? <Navigate to="/" /> : <Auth />,
       children: [
-       
         { path: 'login', element: <Login /> },
         { path: 'register', element: <Register /> },
       ],
     },
     {
       path: '/',
-      element: auth.loading ? <AppLayouts /> : <Navigate to="/auth/login" />,
+      element: auth.id ? <AppLayouts /> : <Navigate to="/auth/login" />,
       children: [
         { path: '/', index: true, element: <Category /> },
         { path: '/categories/:idCategory', element: <Post /> },
+        { path: '/Heart', element: <Post /> },
       ],
     },
   ]);

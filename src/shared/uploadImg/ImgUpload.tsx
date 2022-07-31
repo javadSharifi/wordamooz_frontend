@@ -9,7 +9,7 @@ function ImgUpload() {
 
   if (imgPath) {
     return (
-      <div className='w-full'>
+      <div className="w-full">
         <button
           type="button"
           onClick={() => setImgPath(null)}

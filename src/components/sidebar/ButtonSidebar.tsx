@@ -11,7 +11,7 @@ export default function ButtonSidebar({
   return (
     <button
       onClick={onClick}
-      className=" onClick hover:bg-gradient-info  group flex w-10/12 cursor-pointer select-none flex-wrap gap-2  rounded-lg py-3  text-lg text-gray-500    transition-all duration-200 hover:pl-2 hover:font-bold hover:shadow-md dark:text-white     "
+      className="buttonSidebar  text-gray-500 font-semibold"
     >
       <Icon
         className=" ml-3 w-6     grayscale group-hover:text-white"

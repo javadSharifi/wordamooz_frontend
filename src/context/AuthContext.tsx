@@ -8,8 +8,7 @@ function AuthContext({ children }: { children: React.ReactNode }) {
     loading: null,
     id: null,
     email: null,
-  })
-
+  });
 
   return (
     <authContext.Provider value={[auth, setAuth]}>

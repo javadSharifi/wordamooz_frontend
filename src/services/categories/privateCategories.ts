@@ -11,11 +11,11 @@ type TData = {
 };
 
 async function PrivateCategory(data: TData) {
-  const { id, params, } = data;
+  const { id, params } = data;
 
   const result = await axios.get<IData<ICategory[]>>(
     `api/users/${id}/categories`,
-    { params  }
+    { params }
   );
   return result;
 }
