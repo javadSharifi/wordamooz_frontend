@@ -9,7 +9,6 @@ import {
 import useLogout from 'services/auth/logout';
 import { useNavigate } from 'react-router-dom';
 import { OpenModal } from 'components/Modal';
-import ModalSettings from './ModalSettings';
 
 function ListIcon() {
   const { mutate: logout } = useLogout();

@@ -2,7 +2,7 @@ import { OpenModal } from 'components/Modal';
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import Search from 'components/nav/Search';
-import Avatar from './Avatar';
+import Avatar from './Theme';
 import { PlusCircleIcon } from '@heroicons/react/outline';
 
 function Nav() {
