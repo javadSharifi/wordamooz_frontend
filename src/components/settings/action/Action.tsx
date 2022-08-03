@@ -1,16 +1,25 @@
-import { GlobeAltIcon, MoonIcon, TranslateIcon } from '@heroicons/react/outline';
-import React from 'react';
+import {
+  GlobeAltIcon,
+  MoonIcon,
+  PencilAltIcon,
+  TranslateIcon,
+} from '@heroicons/react/outline';
 import BtnAction from './BtnAction';
-import CheckboxAction from './CheckboxAction';
+import DarkMod from './DarkMod';
+import FontSize from './FontSize';
+import Language from './Language';
 
 const Action = () => {
   return (
     <div className="mt-8 ">
       <BtnAction Icon={GlobeAltIcon} name="Language">
-        <TranslateIcon className='w-8' />
+        <Language/>
       </BtnAction>
       <BtnAction Icon={MoonIcon} name="Dark Mod">
-        <CheckboxAction />
+        <DarkMod />
+      </BtnAction>
+      <BtnAction Icon={PencilAltIcon} name="Fotn Size">
+        <FontSize />
       </BtnAction>
     </div>
   );

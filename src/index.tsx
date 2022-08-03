@@ -12,6 +12,7 @@ import Starter from 'components/Starter';
 import { BrowserRouter } from 'react-router-dom';
 import App from 'App';
 import SearchContext from 'context/SearchContext';
+import FontSizeContext from 'context/FontSizeContext';
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -34,7 +35,9 @@ root.render(
         <SearchContext>
           <BrowserRouter>
             <Starter>
-              <App />
+              <FontSizeContext>
+                <App />
+              </FontSizeContext>
             </Starter>
           </BrowserRouter>
         </SearchContext>

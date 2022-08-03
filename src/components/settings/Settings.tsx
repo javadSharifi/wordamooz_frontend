@@ -6,7 +6,7 @@ import BtnLogout from './BtnLogout';
 
 import Information from './Information';
 
-function ModalSettings() {
+function Settings() {
   return (
     <Modal name="settings">
       <div className="  relative  min-h-[50vh] w-full  flex-col  items-center gap-3 rounded-2xl bg-slate-50 p-3 dark:bg-[#1E293B] lg:min-h-[25rem] lg:w-[25rem]">
@@ -19,4 +19,4 @@ function ModalSettings() {
   );
 }
 
-export default ModalSettings;
+export default Settings;

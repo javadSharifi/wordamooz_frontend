@@ -4,14 +4,14 @@ import Nav from 'components/nav';
 import Sidebar from 'components/sidebar';
 import ThemeContext from 'context/ThemeContext';
 import React from 'react';
-import ModalSettings from 'components/settings';
+import Settings from 'components/settings';
 import { Outlet } from 'react-router-dom';
 
 function AppLayouts() {
   return (
     <ThemeContext>
       <div className="   flex min-h-screen bg-slate-200    dark:bg-[#1b202d]  ">
-        <ModalSettings  />
+        <Settings />
         <Sidebar />
         <Navigation />
         <div className=" relative mx-2 w-full   md:mx-5 lg:w-[85%] xl:w-[87%]">

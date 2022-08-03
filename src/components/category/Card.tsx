@@ -1,8 +1,11 @@
-import React from 'react';
+import { fontSizeContext } from 'context/FontSizeContext';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import Action from './Action';
 
 function CardCategory({ id, text }: { id: number; text: string }) {
+      const { font: size } = useContext(fontSizeContext);
+
   return (
     <div
       data-aos="fade-up"
@@ -20,7 +23,7 @@ function CardCategory({ id, text }: { id: number; text: string }) {
           alt="img"
         />
 
-        <h1 className="center text-lg font-bold ">{text}</h1>
+        <h1 className={`center text-${size} font-bold `}>{text}</h1>
       </Link>
     </div>
   );

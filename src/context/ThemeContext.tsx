@@ -14,6 +14,7 @@ function ThemeContext({ children }: { children: React.ReactNode }) {
   const toggleTheme = () => {
     setTheme((prev) => (prev === 'light' ? 'dark' : 'light'));
   };
+  
   useEffect(() => {
     localStorage.setItem('theme', `${theme}`);
   }, [theme]);

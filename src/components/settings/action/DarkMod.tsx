@@ -1,7 +1,7 @@
 import { themeContext } from 'context/ThemeContext';
 import React, { useContext, useState } from 'react';
 
-const CheckboxAction = () => {
+const DarkMod = () => {
   const { theme, toggleTheme } = useContext(themeContext);
   const [isSubscribed, setIsSubscribed] = useState(
     theme === 'light' ? true : false
@@ -9,7 +9,7 @@ const CheckboxAction = () => {
   return (
     <input
       type="checkbox"
-      className="toggle"
+      className="toggle toggle-primary"
       checked={isSubscribed}
       onChange={() => setIsSubscribed(!isSubscribed)}
       onClick={() => toggleTheme()}
@@ -19,4 +19,4 @@ const CheckboxAction = () => {
   );
 };
 
-export default CheckboxAction;
+export default DarkMod;

@@ -16,7 +16,7 @@ function Nav() {
       data-aos-duration="1000"
       className="  sticky  top-0 z-50 mt-4  flex h-14 w-full rounded-xl   bg-slate-100 shadow-lg shadow-gray-300/50 dark:bg-American-Blue dark:shadow-none  "
     >
-      <div className="ml-10 w-1/3 self-center text-2xl font-bold ">{title}</div>
+      <div className="ml-10 w-1/3 self-center text-2xl font-bold dark:text-white ">{title}</div>
       <div className="mx-3 my-[0.4rem] flex w-2/3 flex-row-reverse flex-wrap items-center  gap-4 ">
         <Avatar />
         <OpenModal
