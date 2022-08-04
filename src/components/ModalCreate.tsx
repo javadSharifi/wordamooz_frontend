@@ -17,7 +17,7 @@ function ModalCreate({ children }: ModalCreateProps) {
   return (
     <>
       <div
-        onClick={() => setId(generateRandomNumber())}
+        // onClick={() => setId(generateRandomNumber())}
         className="min-h-[10rem]  w-full cursor-pointer overflow-hidden rounded-2xl border-2 dark:border-gray-600"
         >
         <ImgUpload />

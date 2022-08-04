@@ -3,15 +3,17 @@ import { Formik } from 'formik';
 import { Form } from 'components/auth/form';
 import FieldInput from 'shared/Input';
 import ButtonInfo from 'shared/ButtonInfo';
-import { useRef } from 'react';
+import { useContext, useRef } from 'react';
 import useNewPost from 'services/posts/newPost';
 import toast from 'react-hot-toast';
 import { useQueryClient } from 'react-query';
+import { fontSizeContext } from 'context/FontSizeContext';
 
 function CreatePost({ id }: { id: string | undefined }) {
   const queryClient = useQueryClient();
   const { mutate } = useNewPost();
   const closModal = useRef<any>();
+  const { font: size } = useContext(fontSizeContext);
   const validationSchema = Yup.object().shape({
     word: Yup.string().required('word is required'),
     meaning: Yup.string().required('word meaning is required'),
@@ -67,7 +69,7 @@ function CreatePost({ id }: { id: string | undefined }) {
               value="body"
               className="  mb-3  max-h-28 w-full "
             />
-            <ButtonInfo className="px-16"> send</ButtonInfo>
+            <ButtonInfo className={`px-16 text-${size} `}> send</ButtonInfo>
           </Form>
         </div>
       )}
