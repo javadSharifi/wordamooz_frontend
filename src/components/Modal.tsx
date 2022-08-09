@@ -12,7 +12,7 @@ export function OpenModal({
   return (
     <label
       htmlFor={name}
-      className={`onClick	   select-none rounded-md font-bold  text-white  ${className} `}
+      className={`onClick	   select-none rounded-md font-bold    ${className} `}
     >
       {children}
     </label>

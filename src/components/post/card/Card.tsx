@@ -25,7 +25,7 @@ function CardPost({ id: postId, body, word, meaning, categoryId }: ICartPost) {
       </div>
 
       <div className="px-6 py-4  font-bold text-gray-500/90">
-        <p className={`py-2 text-${size} selection:bg-sky-300 selection:text-white`}>
+        <p className={`py-2 text-${size} selection:bg-sky-300 dark:text-white selection:text-white`}>
           {meaning}
         </p>
         <p className={` whitespace-pre-wrap break-words py-2  text-${size}  selection:bg-sky-300 selection:text-white dark:text-white`}>

@@ -38,7 +38,7 @@ function Action({
     <Dropdown>
       <BtnDropdown onClick={() => removePost()}>
         <TrashIcon className="h-7 w-8 " />
-        <p className="self-center font-bold ">remove</p>
+        <p className="self-center  font-bold ">remove</p>
       </BtnDropdown>
     </Dropdown>
   );

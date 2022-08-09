@@ -3,11 +3,15 @@ import { Navigate, useRoutes } from 'react-router-dom';
 import { authContext } from 'context/AuthContext';
 import Category from 'pages/Category';
 import Post from 'pages/Post';
+import Auth from 'pages/auth';
+import Login from 'pages/auth/Login';
+import Register from 'pages/auth/Register';
+import AppLayouts from 'layouts/AppLayouts';
 
-const Auth = React.lazy(() => import('pages/auth'));
-const Login = React.lazy(() => import('pages/auth/Login'));
-const Register = React.lazy(() => import('pages/auth/Register'));
-const AppLayouts = React.lazy(() => import('layouts/AppLayouts'));
+// const Auth = React.lazy(() => import('pages/auth'));
+// const Login = React.lazy(() => import('pages/auth/Login'));
+// const Register = React.lazy(() => import('pages/auth/Register'));
+// const AppLayouts = React.lazy(() => import('layouts/AppLayouts'));
 
 function App() {
   const [auth] = useContext(authContext);

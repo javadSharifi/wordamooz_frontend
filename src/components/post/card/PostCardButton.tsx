@@ -4,7 +4,7 @@ import CartButton from './Button';
 
 function PostCardButton({ word }: { word: string }) {
   return (
-    <div className="postcard‌‌-Button  absolute  ">
+    <div className="postcard‌‌-Button dark:text-white  absolute  ">
       <CartButton
         href={`https://fa.forvo.com/word/${word}/#en`}
         Icon={VolumeUpIcon}
